@@ -8,9 +8,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //pages
 import HomePage from "./pages/home.jsx";
+import Outline from "./pages/outline.jsx";
 import ClickCounter from "./pages/click-counter.jsx";
+import ArithemeticOperator from "./pages/arithmetic-operator.jsx";
 import ProductList from "./pages/productlist.jsx";
 import UserFetcher from "./pages/data-fetcher.jsx";
+import Navigate from "./pages/navigation.jsx";
+import ThemeToggle from "./pages/theme-toggle.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,17 +27,33 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "task 1",
+        path: "outline",
+        element: <Outline/>
+      },
+      {
+        path: "task-1",
         element: <ClickCounter />,
       },
       {
-        path: "task 2",
+        path: "task-2",
+        element: <ArithemeticOperator/>,
+      },
+      {
+        path: "task-3",
         element: <ProductList />,
       },
       {
-        path: "task 3",
+        path: "task-4",
         element: <UserFetcher />,
       },
+      {
+        path: "task-5",
+        element: <Navigate/>,
+      },
+      {
+        path: "task-6",
+        element: <ThemeToggle/>
+      }
     ],
   },
 ]);

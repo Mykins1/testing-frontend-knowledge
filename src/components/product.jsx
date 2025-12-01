@@ -1,9 +1,9 @@
 
 const Product = ({ items }) => {
   return (
-    <ul>
+    <ul className="grid grid-cols-3 grid-rows-4 gap-2 mt-4">
       {items.map((productName, index) => (
-        <li key={index}>{productName}</li>
+        <li className="border p-2 rounded-xl" key={index}>{productName}</li>
       ))}
     </ul>
   );
